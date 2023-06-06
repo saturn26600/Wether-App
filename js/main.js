@@ -20,7 +20,7 @@ cityInput.addEventListener("keydown", function (event) {
 function getWeather() {
   let city = cityInput.value
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=kr&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=kr&units=metric`
   )
     .then((response) => response.json())
     .then((data) => {
